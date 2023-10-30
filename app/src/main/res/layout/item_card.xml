@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemCard"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:paddingVertical="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/itemThumbnail"
+        android:layout_height="@dimen/list_item_image_height"
+        android:layout_width="@dimen/list_item_image_width"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_mon_man"
+        android:scaleType="fitCenter"
+        android:elevation="10dp"
+        android:layout_marginEnd="-50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/itemCardView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/menu_image" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/itemCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="50dp"
+        android:clickable="true"
+        android:focusable="true"
+
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:strokeColor="@color/red"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="55dp"
+
+            app:layout_constraintStart_toEndOf="@id/itemThumbnail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <include layout="@layout/content_food_card"
+                android:id="@+id/itemContent"
+                />
+
+            <ImageView
+                android:id="@+id/itemBackIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron_right_48dp"
+                android:background="#00000000"
+
+                app:layout_constraintStart_toEndOf="@id/itemContent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:contentDescription="@string/go_to_this_menu" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

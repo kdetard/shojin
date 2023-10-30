@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Shojin</string>
+    <string name="product_count">%d sản phẩm</string>
+    <string name="sale_count">%d đang giảm giá</string>
+    <string name="title">%s</string>
+    <string name="go_to_this_menu">Go to this menu</string>
+    <string name="menu_image">Menu image</string>
+    <string name="lunch_menu_title">Cơm trưa</string>
+    <string name="price_vnd">%d ₫</string>
+    <string name="discount_price">@string/price_vnd</string>
+    <string name="original_price">@string/price_vnd</string>
+    <string name="detail_title">Thông tin chi tiết</string>
+</resources>

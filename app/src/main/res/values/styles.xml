@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.App.TitleLarge</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.App.TitleMedium</item>
+    </style>
+
+    <style name="TextAppearance.App.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="TextAppearance.App.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="KTitle" parent="@style/TextAppearance.AppCompat">
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="KMenuTitle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="KCategoryContent" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:textColor">@color/inactive_color</item>
+        <item name="drawableTint">@color/cardview_dark_background</item>
+    </style>
+
+    <style name="KFoodDiscountPrice">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:textColor">@color/active_color</item>
+    </style>
+
+    <style name="KFoodOriginalPrice">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:textColor">@color/inactive_color</item>
+        <item name="android:foreground">@drawable/strikethrough_inactive_foreground</item>
+    </style>
+</resources>
